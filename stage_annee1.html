@@ -4,23 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Stage 1er année</title>
 </head>
 <body>
-    <div id="stage1">
-        <div id="entreprise">
-            <p>
-                Lors de ma première, on m'a demandé d'effectuer un stage de 7 semaines afin de valider celle-ci.<br>
-                Je suis donc allé dans l'entreprise Pixl Studio, situer à Lyon dans le deuxième arrondissement.<br> 
-                Cette entreprise crée et fournit des interfaces pour le domaine de l'hôtellerie. <br>
-                Durant mon stage, on m'a confié 2 missions :
-            </p>
-        </div>
-        <div id="mission1">
-            <p>Ma première mission consistait à coder et à implémenter deux éléments du site vitrine de l'entreprise<br> 
-                à partir d'un modèle fournit par mon tuteur. Cette mission m'a amené à découvrir framework CSS, tailwind. <br>
-                J'ai donc dû apprendre à l'utiliser en lisant <a href="https://tailwindcss.com/docs/utility-first">la documentation</a> et <a href="https://play.tailwindcss.com/">tailwind Play</a>.</p>
-        </div>
+    <div class="navbar">
+        <nav>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li class="active"><a href="stage_annee1.html" style="color:#01796F">Stage 1ère annee</a></li>
+                <li><a href="#">Projet gedimagination</a></li>
+                <li><a href="#">Projet Almanach Imaginaire</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <br><br><br><br><br><br>
+    <div class="containe">
+        <div id="title" class="header-slider">
+            <h1>Stage première année</h1><br><br>
+         </div>
+         <div id="stage1">
+             <div id="entreprise">
+                 <p>
+                     Lors de ma première, on m'a demandé d'effectuer un stage de 7 semaines afin de valider celle-ci.
+                     Je suis donc allé dans l'entreprise Pixl Studio, situer à Lyon dans le deuxième arrondissement. 
+                     Cette entreprise crée et fournit des interfaces pour le domaine de l'hôtellerie.
+                     Durant mon stage, on m'a confié 2 missions :
+                 </p>
+                 <div id="logo">
+                     <img src="./photos/Logo_PixlStudio.png"/>
+                 </div>
+             </div>
+             <div id="mission1">
+                <h2>Première mission : </h2> <br>
+                <p>Ma première mission consistait à coder et à implémenter deux éléments du site vitrine de l'entreprise 
+                    à partir d'un modèle fournit par mon tuteur. Cette mission m'a amené à découvrir framework CSS, tailwind. 
+                    J'ai donc dû apprendre à l'utiliser en lisant <a href="https://tailwindcss.com/docs/utility-first">la documentation</a> et <a href="https://play.tailwindcss.com/">Tailwind Play</a>.
+                </p>
+             </div>
+         </div>
     </div>
 </body>
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    const links = document.querySelectorAll(".nav-links li");
+
+    hamburger.addEventListener('click', ()=>{
+    //Animate Links
+        navLinks.classList.toggle("open");
+        links.forEach(link => {
+            link.classList.toggle("fade");
+        });
+
+        //Hamburger Animation
+        hamburger.classList.toggle("toggle");
+    });
+</script>
 </html>
