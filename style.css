@@ -170,7 +170,7 @@ p{
     text-align: justify;
 }
 
-h2{
+h2, h3{
     color: #01796F;
     text-align: center;
 }
@@ -186,6 +186,14 @@ div #logo{
 
 div #mission1 a{
     color: blue;
+}
+
+div #mission2 a{
+    color: blue;
+}
+
+div #img_site, div #smart_price{
+    text-align: center;
 }
 
 
