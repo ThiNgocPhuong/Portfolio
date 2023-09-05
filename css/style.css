@@ -1,0 +1,295 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  background-color: #545454;
+  color: white;
+}
+
+.navbar{
+  background-color: #464545;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+.logo a{
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.navbar ul{
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li{
+  padding: 10px 30px;
+  position: relative;
+}
+
+.navbar ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+
+.navbar ul li a:hover{
+  color: #38c7b2;
+}
+
+.dropdown_menu{
+  display: none;
+}
+
+.navbar ul li:hover .dropdown_menu{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #545454;
+}
+
+.navbar ul li:hover .dropdown_menu ul{
+  display: block;
+  margin: 10px;
+}
+
+.navbar ul li:hover .dropdown_menu ul li{
+  width: 140px;
+  padding: 10px;
+}
+
+.name{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name h1{
+  width: 80px;
+  font-weight: 700;
+  flex: 1;
+  text-align: center;
+  padding: 20px 10px;
+  margin: 3em 0em 3em;
+}
+
+.pres .diplomes{
+  text-align: center;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  margin: 25px 0px 0px 100px;
+  
+}
+
+.boxe_one{
+  width: 40%;
+  height: 35vh;
+  
+}
+
+.boxe_two{
+  width: 40%;
+  height: 35vh;
+  
+}
+
+.stages{
+  margin: 25px 0px 0px 80px;
+}
+
+.stages img{
+  max-width: 1300px;
+  background-size: cover;
+}
+
+.boxe_stage1{
+  text-align: center;
+  width: 50%;
+  height: 35vh;
+}
+
+.boxe_stage1 img{
+  max-width: 340px;
+  background-size: cover;
+}
+
+.boxe_stage2{
+  text-align: center;
+  width: 50%;
+  height: 35vh;
+}
+
+.boxe_stage2 img{
+  max-width: 340px;
+  background-size: cover;
+}
+
+.projets{
+  margin: 50px 0px 0px 80px;
+}
+
+.projets img{
+  max-width: 1300px;
+  background-size: cover;
+}
+
+.boxe_projet1{
+  text-align: center;
+  width: 40%;
+  height: 35vh;
+}
+
+.boxe_projet1 img{
+  max-width: 340px;
+  background-size: cover;
+}
+
+.boxe_projet2{
+  text-align: center;
+  width: 40%;
+  height: 35vh;
+}
+
+.boxe_projet2 img{
+  max-width: 340px;
+  background-size: cover;
+}
+
+.veille_tech{
+  margin: 50px 0px 0px 80px;
+}
+
+.veille_tech img{
+  max-width: 1300px;
+  background-size: cover;
+}
+
+.boxe_v1{
+  text-align: center;
+  width: 40%;
+  height: 35vh;
+}
+
+.boxe_v1 img{
+  max-width: 340px;
+  background-size: cover;
+}
+
+.boxe_v2{
+  text-align: center;
+  width: 40%;
+  height: 35vh;
+}
+
+.boxe_v2 img{
+  max-width: 340px;
+  background-size: cover;
+}
+
+.boxe_v3{
+  text-align: center;
+  width: 40%;
+  height: 35vh;
+}
+
+.boxe_v3 img{
+  max-width: 340px;
+  background-size: cover;
+}
+
+.pres_pixl{
+  margin: 50px 0px 0px 80px;
+}
+
+.pres_pixl p{
+  text-align: center;
+}
+
+.boxe_logo img{
+  max-width: 500px;
+  background-size: cover;
+  align-items: left;
+}
+
+.boxe_pres{
+  text-align: left;
+  width: 40%;
+  height: 35vh;
+}
+
+.missions{
+  margin: 50px 0px 0px 80px;
+}
+
+.missions img{
+  max-width: 1300px;
+  background-size: cover;
+}
+
+.mission1{
+  max-width: 1000px;
+  align-items: center;
+  text-align: center;
+}
+
+.mission2{
+  max-width: 1000px;
+  align-items: center;
+  text-align: center;
+}
+
+.pres_wade{
+  margin: 50px 0px 0px 80px;
+}
+
+.mission img{
+  max-width: 1300px;
+  background-size: cover;
+}
+
+.mission h2{
+  text-align: center;
+}
+
+.boxe_ged{
+  text-align: left;
+  width: 40%;
+  height: 35vh;
+}
+
+.web{
+  margin: 50px 0px 0px 80px;
+}
+
+.mobile{
+  margin: 50px 0px 0px 80px;
+}
+
+.etape1{
+  margin: 50px 0px 0px 80px;
+}
+
+.etape2{
+  margin: 50px 0px 0px 80px;
+}
+
+.etape3{
+  margin: 50px 0px 0px 80px;
+}
+
+  
